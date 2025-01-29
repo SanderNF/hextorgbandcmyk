@@ -2,6 +2,36 @@ body{
 background-color: rgb(39, 36, 36);
 }
 
+img{
+    width: 4vw;
+    height: auto !important;
+}
+
+.fapposlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white !important;
+    padding: 1vw;
+    justify-content: space-between;
+}
+
+.text1{
+    font-size: 1vw;    
+    font-family: 'Open Sans';
+    font-weight: bold !important;
+    color: white;
+
+}
+
+.text2{
+    font-size: 1vw;    
+    font-family: 'Open Sans';
+    font-weight: bold !important;
+    color: white;
+}
+
 .container{
     width: 60%;
     height: 40%;
@@ -14,7 +44,6 @@ background-color: rgb(39, 36, 36);
     background-color: rgb(255, 255, 255);
     border-radius: 1.5vw;
     padding: 2vw;
-
 }
 
 #convertBtn{
@@ -34,3 +63,8 @@ background-color: rgb(39, 36, 36);
     margin-top: 1vw;
 }
 
+.footertext,.footer{
+    font-size: 1vw;
+    margin-top: 1vw;
+    font-family: "Open Sans";
+}
