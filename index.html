@@ -28,12 +28,22 @@
   const hexInput = document.getElementById('hexInput');
   const convertButton = document.getElementById('convertBtn');
   const result = document.getElementById('result');
+  const content = document.getElementById('content');
 
   convertButton.addEventListener('click', () => {
     const hex = hexInput.value;
     const rgb = hexToRgb(hex);
     const cmyk = rgbToCmyk(rgb);
     result.innerHTML = `RGB: ${rgb.join(', ')}<br>CMYK: ${cmyk.join(', ')}`;
+  });
+
+  hexInput.addEventListener('input', () => {
+      const hex = hexInput.value;
+      if (hex.charAt(0) != '#') {
+          hexInput.value = "#" + hex;
+      } else if (hex.charAt(1) == '#') {
+          hexInput.value = hex.replace('#', '');
+      }
   });
 
   function hexToRgb(hex) {
